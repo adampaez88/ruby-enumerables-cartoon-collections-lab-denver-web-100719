@@ -45,7 +45,6 @@ cheese_types = ["cheddar", "gouda", "camembert"]
     if food.include?(cheese)
       return cheese
     end
-
   end
   return nil
 end
