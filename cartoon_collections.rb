@@ -35,7 +35,7 @@ end
 #
 # return nil
 # end
-# this will work below is a better way
+# this will work, below is a better way
 
 
 def find_the_cheese(food)
