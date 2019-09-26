@@ -43,8 +43,8 @@ cheese_types = ["cheddar", "gouda", "camembert"]
 
   cheese_types.each |cheese| do
     if food.include?(cheese)
-      return cheese
+      return cheese 
     end
   end
-  
+  return nil 
 end
