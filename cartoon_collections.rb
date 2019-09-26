@@ -21,17 +21,28 @@ words.any? {|word| word.length > 4}
 end
 
 
-def find_the_cheese(food)# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+# def find_the_cheese(food)# code an argument here
+#   # the array below is here to help
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#
+#   if food.include?("cheddar")
+#     return "cheddar"
+#   elsif food.include?("gouda")
+#     return "gouda"
+#   elsif food.include?("camembert")
+#     return "camembert"
+#   end
+#
+# return nil
+# end
+# this will work below is a better way
 
-  if food.include?("cheddar")
-    return "cheddar"
-  elsif food.include?("gouda")
-    return "gouda"
-  elsif food.include?("camembert")
-    return "camembert"
+
+def find_the_cheese(food)
+cheese_types = ["cheddar", "gouda", "camembert"]
+
+  cheese_types.each |cheese| do
+    food.include?(cheese)
   end
-
-return nil 
+  
 end
